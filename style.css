@@ -90,6 +90,12 @@ a {
   margin-bottom: 8px;
 }
 
+.phone_number > input,
+.password input{
+  background-color: transparent;
+  border: none;
+}
+
 .phone_number {
   margin-top: 14px;
 }
