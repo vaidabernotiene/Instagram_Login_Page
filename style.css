@@ -17,16 +17,15 @@ a {
 }
 
 .instagram_page {
-  max-width: 350px;
+  max-width: 400px;
   max-height: 692px;
-
-  width: 350px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
   padding: 40px;
 }
 
 .instagram {
-  border: 1px solid lightgrey;
-  border-radius: 1px;
   margin: 10px 0px 10px;
   padding-top: 40px;
   padding-bottom: 20px;
@@ -39,8 +38,11 @@ a {
   vertical-align: baseline;
 }
 
+.instagram {
+  border: 1px solid lightgrey;
+}
+
 .instagram,
-.instagram_login_page,
 .instagram_login_form,
 .instagram_logo {
   background-color: whitesmoke;
@@ -56,11 +58,20 @@ a {
   padding-bottom: 24px;
 }
 
+.instagram_logo,
+.instagram_login_page,
+.instagram_login_inf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .instagram_login_form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 300px;
   height: 100%;
 }
 
@@ -84,16 +95,17 @@ a {
 
 .phone_number,
 .password {
+  background-color: rgb(240, 240, 240);
   border: 1px solid lightgrey;
   border-radius: 5px;
-  color: gray;
   margin-bottom: 8px;
 }
 
 .phone_number > input,
-.password input{
-  background-color: transparent;
+.password input {
+  background-color: rgb(240, 240, 240);
   border: none;
+  height: 100%;
 }
 
 .phone_number {
@@ -175,14 +187,14 @@ p > span,
   justify-content: center;
 }
 
-.FB_login button{
+.FB_login button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px 0px ;
+  margin: 10px 0px;
 }
 
-.FB_login button span img{
+.FB_login button span img {
   width: 20px;
 }
 
@@ -200,26 +212,28 @@ p > span,
 
 /*---------3 part----------*/
 .app {
+  background-color: transparent;
+  border: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   padding-top: 20px;
   height: 100px;
 }
 
-.app_logos{
+.app_logos {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
-.applestore_logo img{
+.applestore_logo img {
   width: 100%;
   height: 45px;
 }
 
-.googlesstore_logo img{
+.googlesstore_logo img {
   width: 100%;
   height: 90px;
 }
